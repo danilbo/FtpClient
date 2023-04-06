@@ -25,6 +25,18 @@ public class FileInfo {
         return name;
     }
 
+    public String getPath() {
+        return path;
+    }
+
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    public long getSize() {
+        return size;
+    }
+
     private LocalDateTime getLocalDateTime(Calendar calendar){
         TimeZone tz = calendar.getTimeZone();
         ZoneId zoneId = tz.toZoneId();
