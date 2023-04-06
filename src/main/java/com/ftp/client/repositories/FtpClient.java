@@ -69,6 +69,16 @@ public class FtpClient {
                 })
                 .collect(Collectors.toList());
     }
+    public Collection<String> testListFiles(String path) throws IOException {
+        FTPFile[] files = ftp.listFiles(path);
+
+        return Arrays.stream(files)
+                .map(e->{
+                    byte[] bytes = StringUtils.getBytesIso8859_1(e.getName());
+                    return StringUtils.newStringUtf8(bytes);
+                })
+                .collect(Collectors.toList());
+    }
     public FTPFile[] getFilesFromDir(String path) throws IOException {
         return ftp.mlistDir(path);
     }
