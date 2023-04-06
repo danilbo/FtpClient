@@ -5,7 +5,7 @@
 [ commons-net ](https://commons.apache.org/proper/commons-net/)
 [ commons-codec ](https://commons.apache.org/proper/commons-codec/dependency-info.html)
 ## Как посмотреть:
-1. Открыть gitBush в пустой директории и ввести:
+1. Склонировать репозиторий (Открыть gitBush и ввести):
 2. ` git clone git@github.com:danilbo/FtpClient.git `
 3. ` cd FtpClient/ `
 4. ` mvn install `
