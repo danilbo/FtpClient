@@ -21,7 +21,7 @@ public class FtpClient {
     private String server;
     @Value("${port}")
     private int port;
-    @Value("${user}")
+    @Value("${ftp-client-user}")
     private String user;
     @Value("${password}")
     private String password;
